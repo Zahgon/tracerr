@@ -10,14 +10,11 @@ func main() {
 	}
 }
 
-func foo() error {
-	return bar(0)
-}
+func foo() error { _ = "STUB: not implemented"; return nil }
 
 func bar(i int) error {
-	if i >= 2 {
-		// Create new error with stack trace.
-		return tracerr.Errorf("i = %d", i)
-	}
-	return bar(i + 1)
+	_ = "STUB: not implemented"
+
+	// Create new error with stack trace.
+	return nil
 }

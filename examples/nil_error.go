@@ -14,6 +14,4 @@ func main() {
 	}
 }
 
-func nilError() error {
-	return tracerr.Wrap(nil)
-}
+func nilError() error { _ = "STUB: not implemented"; return nil }

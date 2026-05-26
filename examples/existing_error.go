@@ -1,8 +1,6 @@
 package main
 
 import (
-	"os"
-
 	"github.com/ztrue/tracerr"
 )
 
@@ -12,12 +10,8 @@ func main() {
 	}
 }
 
-func read() error {
-	return readNonExistent()
-}
+func read() error { _ = "STUB: not implemented"; return nil }
 
-func readNonExistent() error {
-	_, err := os.ReadFile("/tmp/non_existent_file")
-	// Add stack trace to existing error, no matter if it's nil.
-	return tracerr.Wrap(err)
-}
+func readNonExistent() error { _ = "STUB: not implemented"; return nil }
+
+// Add stack trace to existing error, no matter if it's nil.
